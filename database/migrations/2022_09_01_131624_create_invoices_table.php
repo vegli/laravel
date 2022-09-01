@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('amount');
             $table->string('status'); // Naplaceno, dostavljen racun, negiran
             $table->dateTime('billed_date');
-            $table->dateTime('paid_date')->nullable;
+            $table->dateTime('paid_date')->nullable();
 
             $table->timestamps();
         });
